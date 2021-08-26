@@ -11,7 +11,7 @@ in Belarus date March 9, 2016
 at [Facebook group: Rust.by](https://web.facebook.com/groups/1673382339595171) . Pretty promising,
 right?
 
-## Maturity with maturity of language
+## Maturity with the maturity of the language
 
 So starting from 2016 community was developed up to 40 people. Belarus Rust user group was lead
 by [ Avatar Konstantin Stepanov](https://github.com/kstep). Rust meetups was supported
