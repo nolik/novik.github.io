@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> The Future of Rust? | The One Engineer Blog </title>
+        
+
+        <!-- Enable responsiveness on mobile devices-->
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <!--  css -->
+        <link rel="stylesheet"  href="https:&#x2F;&#x2F;nolik.github.io&#x2F;/ergo.css" >
+
+        <!-- fonts -->
+        <!-- preload  -->
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+        <!-- load -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+    </head>
+
+    <body>
+      
+        
+<input type="checkbox" id="openSidebarMenu" class="openSidebarMenu">
+<label class="menu cross menu--1" for="openSidebarMenu">
+    <svg viewBox="0 0 75 75" xmlns="https://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="30" />
+        <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+        <path class="line--2" d="M0 50h70" />
+        <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+    </svg>
+</label>
+
+<div id="sidebarMenu">
+    <div class="menu_wrapper">
+        <ul class="sidebarMenuInner">
+            <li>
+                <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;" >The One Engineer Blog</a>
+                <div class="menu_div" ></div>
+            </li>
+            
+            
+            <li><a href="https://github.com/nolik" target="_blank" >nolik</a><i class="fab fa-github" ></i></li>
+            
+            
+            
+            
+            
+            <li><a href="https://www.linkedin.com/in/ihar-novik" target="_blank">ihar-novik</a><i class="fab fa-linkedin" ></i></li>
+            
+            
+            
+            
+            <li><a href="mailto:nolik03@gmail.com?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+            
+        </ul>
+    </div>
+</div>
+
+      
+
+      
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;nolik.github.io&#x2F;/img/profile.svg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;">The One Engineer Blog</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;post-3&#x2F;" id="article_link">The Future of Rust?</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2020-08-26">August 26, 2020</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 475 words </li>
+    <span class="dotDivider" ></span>
+    <li> 3 min </li>
+</ul>
+
+      <h4 id="on-august-13-i-was-shocked-by-the-news-of-the-massive-layoffs-at-the-mozilla">On August 13, I was shocked by the news of the massive layoffs at the Mozilla.</h4>
+<hr />
+<p>The first information I got from Twitter about lays off one person from Mozilla's Rust team:
+<a href="https://twitter.com/tschneidereit/status/1293868141953667074">Till Schneidereit: Much of the team I used to manage was part of the Mozilla layoffs on Tuesday.</a></p>
+<h2 id="the-next-swallow">The next swallow</h2>
+<hr />
+<p>The next swallow was the news from Hacker News about abbreviations in the <a href="https://servo.org/">Servo</a> team, which I
+consider one of the fundamental projects of the Rust language.</p>
+<p><a href="https://news.ycombinator.com/item?id=24133342">Hacker News: inside about layoffs in the Mozilla.</a></p>
+<h2 id="how-money-changes-principles">How money changes principles</h2>
+<hr />
+<p><a href="https://blog.mozilla.org/blog/2020/08/11/changing-world-changing-mozilla">Mitchell Baker: Changing World, Changing Mozilla.</a></p>
+<p>This blog announcement was released before layoffs and freezing projects as Servo in the Mozilla. The announcement based
+on the 5 point. And if you read between the lines, then the main message is indicated in the last paragraph: focus on
+the economy:</p>
+<pre data-lang="building a better internet by creating new kinds of value in Firefox; investing in innovation and creating" class="language-building a better internet by creating new kinds of value in Firefox; investing in innovation and creating "><code class="language-building a better internet by creating new kinds of value in Firefox; investing in innovation and creating" data-lang="building a better internet by creating new kinds of value in Firefox; investing in innovation and creating">new products; and adjusting our finances to ensure stability over the long term.
+</code></pre>
+<p>An old adage immediately comes to mind: if you don't see an obvious reason for an act, then most likely it's money. You can remember about The Mozilla
+Manifesto with the pledge for a Healthy Internet and Mozilla Foundation that non-profit organization. And as a
+counterbalance to this the Mozilla Corporation with its own <code>economics goals</code>.</p>
+<h2 id="laying-the-foundation-for-rust-s-future">Laying the foundation for Rust's future</h2>
+<hr />
+<p>seems Rust teams was to be shocked but not destroyed and in a blog post the Rust Core team reported:</p>
+<pre><code>There’s no denying the impact these layoffs have had on all members of the Rust community, particularly the folks who
+have lost their jobs in the middle of a global pandemic. Notwithstanding the deep personal impact, the Rust project as
+a whole is very resilient to such events. We have leaders and contributors from a diverse set of different backgrounds
+and employers, and that diversity is a critical strength. Further, it is a common misconception that all of the Mozilla
+employees who participated in Rust leadership did so as a part of their employment. In fact, many Mozilla employees in
+Rust leadership contributed to Rust in their personal time, not as a part of their job. Finally, we would like to
+emphasize that membership in Rust teams is given to individuals and is not connected to one’s employer. Mozilla employees
+who are also members of the Rust teams continue to be members today, even if they were affected by the layoffs. Of
+course, some may choose to scale back their involvement.
+</code></pre>
+<p>Later they make an announcement about creation of Rust foundation:
+<a href="https://blog.rust-lang.org/2020/08/18/laying-the-foundation-for-rusts-future.html">Laying the foundation for Rust's future</a></p>
+
+      
+  </article>
+</section>
+
+       
+
+      <footer>
+        
+          
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;nolik.github.io&#x2F;/img/profile.svg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;">The One Engineer Blog</a>
+</h5>
+
+          
+<ul class="social_list foot_list" >
+    
+    
+    <li class="button extra_small font_faint"><a href="https://github.com/nolik" target="_blank" >nolik</a><i class="fab fa-github" ></i></li>
+    
+    
+    
+    
+    
+    <li class="button extra_small font_faint"><a href="https://www.linkedin.com/in/ihar-novik" target="_blank">ihar-novik</a><i class="fab fa-linkedin" ></i></li>
+    
+    
+    
+    
+    <li class="button extra_small font_faint"><a href="mailto:nolik03@gmail.com?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+    
+</ul>
+
+        
+      </footer>
+    </body>
+</html>

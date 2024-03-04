@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+        <!-- SEO -->
+        
+        <title> Writing Telegram bot on Rust | The One Engineer Blog </title>
+        
+
+        <!-- Enable responsiveness on mobile devices-->
+        <meta name="viewport"  content="width=device-width, initial-scale=1.0, maximum-scale=1" >
+
+        <!--  css -->
+        <link rel="stylesheet"  href="https:&#x2F;&#x2F;nolik.github.io&#x2F;/ergo.css" >
+
+        <!-- fonts -->
+        <!-- preload  -->
+        <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway" as="style">
+        <link rel="preload"  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" as="style" >
+        <!-- load -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,500,500i,600,700,800,900|Raleway">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      
+    </head>
+
+    <body>
+      
+        
+<input type="checkbox" id="openSidebarMenu" class="openSidebarMenu">
+<label class="menu cross menu--1" for="openSidebarMenu">
+    <svg viewBox="0 0 75 75" xmlns="https://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="30" />
+        <path class="line--1" d="M0 40h62c13 0 6 28-4 18L35 35" />
+        <path class="line--2" d="M0 50h70" />
+        <path class="line--3" d="M0 60h62c13 0 6-28-4-18L35 65" />
+    </svg>
+</label>
+
+<div id="sidebarMenu">
+    <div class="menu_wrapper">
+        <ul class="sidebarMenuInner">
+            <li>
+                <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;" >The One Engineer Blog</a>
+                <div class="menu_div" ></div>
+            </li>
+            
+            
+            <li><a href="https://github.com/nolik" target="_blank" >nolik</a><i class="fab fa-github" ></i></li>
+            
+            
+            
+            
+            
+            <li><a href="https://www.linkedin.com/in/ihar-novik" target="_blank">ihar-novik</a><i class="fab fa-linkedin" ></i></li>
+            
+            
+            
+            
+            <li><a href="mailto:nolik03@gmail.com?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+            
+        </ul>
+    </div>
+</div>
+
+      
+
+      
+<nav id="overlord" class="overlord" >
+  
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;nolik.github.io&#x2F;/img/profile.svg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;">The One Engineer Blog</a>
+</h5>
+
+</nav>
+
+<section class="post_container">
+  <article>
+    
+      <h1 class="article_title"><a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;post-4&#x2F;" id="article_link">Writing Telegram bot on Rust</a></h1>
+      
+<ul class="frontmatter frontmatter_page" id="frontmatter">
+    <li>
+        <time class="article_time"  datetime="2020-09-02">September 02, 2020</time>
+    </li>
+    <span class="dotDivider"></span>
+    <li> 286 words </li>
+    <span class="dotDivider" ></span>
+    <li> 2 min </li>
+</ul>
+
+      <h2 id="writing-telegram-bot-is-simple">Writing Telegram bot is simple</h2>
+<p>Here we go, I decide to write Telegram bot on Rust. The aim of the bot is pretty simple, and I spied it from JProf
+community channel: parsing all user messages and when met Rust word - response with Rust sticker into a channel and counting time from the latest mention.</p>
+<h2 id="intro-into-telegram-api">Intro into Telegram API</h2>
+<p>How to start develop Telegram bot? With this question I go to the Internet and found out reach description on official
+Telegram site with description of Bot API: <a href="https://core.telegram.org/bots">Bots: An introduction for developers</a>.</p>
+<h2 id="choosing-rust-telegram-lib">Choosing Rust Telegram Lib</h2>
+<p>It was a simple decision - I just gone to the crates.io and try to find any mention of telegram. The most used was library:
+<a href="https://crates.io/crates/telegram-bot">Rust Telegram Bot Library: telegram-bot</a>. It has pretty reach readmi with simple
+example.</p>
+<h2 id="creating-bot-project">Creating bot project</h2>
+<p>I was surprised by simplicity of telegram-bot creation, that help to build simple telegram bot just in several lines. Fortunately, the logic is very simple for start - just recognize 'Rust' keywords and response some message into channel. <a href="https://github.com/nolik/rust-by-bot">My Telegram Bot Repo</a></p>
+<h2 id="ci-cd">CI / CD</h2>
+<p>Additionally, I found very useful Github Actions for Rust that cover all basic continuous integration features + have suitable integration with Heroku that used like a hosting for bot: <a href="https://github.com/marketplace/actions/rust-action">Rust Github Action</a></p>
+<h2 id="to-do-list">To do List</h2>
+<p>As far I use Heroku Free Dyno Usage and for now I deploy app like a worker. As far I store state in memory - I lose it with each redeploy. I'm planning to add some persistent storage and try to use the most popular one for Rust: <a href="http://diesel.rs/">Diesel ORM</a></p>
+
+      
+  </article>
+</section>
+
+       
+
+      <footer>
+        
+          
+<figure class="mini_logo ">
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;" style="background-image: url(https:&#x2F;&#x2F;nolik.github.io&#x2F;/img/profile.svg)"></a>
+</figure>
+<h5>
+    <a href="https:&#x2F;&#x2F;nolik.github.io&#x2F;">The One Engineer Blog</a>
+</h5>
+
+          
+<ul class="social_list foot_list" >
+    
+    
+    <li class="button extra_small font_faint"><a href="https://github.com/nolik" target="_blank" >nolik</a><i class="fab fa-github" ></i></li>
+    
+    
+    
+    
+    
+    <li class="button extra_small font_faint"><a href="https://www.linkedin.com/in/ihar-novik" target="_blank">ihar-novik</a><i class="fab fa-linkedin" ></i></li>
+    
+    
+    
+    
+    <li class="button extra_small font_faint"><a href="mailto:nolik03@gmail.com?subject=hi" target="_blank">say hello</a><i class="fas fa-envelope" ></i></li>
+    
+</ul>
+
+        
+      </footer>
+    </body>
+</html>
