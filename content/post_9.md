@@ -8,7 +8,7 @@ I finally came to the idea that would be nice to have a proper hobby. Also inspi
 kinds of keyboards I found [Dactyl-Manuform GitHub](https://github.com/abstracthat/dactyl-manuform)
 project as a great idea for the self-build split keyboard as DIY project.
 
-![dactyl-manuform-stl.png](https://nolik.github.io//img/post_9/dactyl-manuform-stl.png =x620)
+<img src="https://nolik.github.io//img/post_9/dactyl-manuform-stl.png" alt="drawing" width="620"/>
 
 If you decide to build Dactul-Manuform as well I would recommend you to check github repo and as
 well this blog helps me a
