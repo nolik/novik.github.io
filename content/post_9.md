@@ -8,7 +8,7 @@ I finally came to the idea that would be nice to have a proper hobby. Also inspi
 kinds of keyboards I found [Dactyl-Manuform GitHub](https://github.com/abstracthat/dactyl-manuform)
 project as a great idea for the self-build split keyboard as DIY project.
 
-![dactyl-manuform-stl.png](https://nolik.github.io//img/post_9/dactyl-manuform-stl.png)
+![dactyl-manuform-stl.png](https://nolik.github.io//img/post_9/dactyl-manuform-stl.png =x620)
 
 If you decide to build Dactul-Manuform as well I would recommend you to check github repo and as
 well this blog helps me a
@@ -57,13 +57,13 @@ able to find bottom plates as well.
 
 And coz I'm complete newbie in 3D printing first time sure first try was not so successful.
 
-![first_try.png](https://nolik.github.io//img/post_9/first_try.png)
+![first_try.png](https://nolik.github.io//img/post_9/first_try.png =x620)
 
 I came up with a question about what's wrong on Reddit and there was a bunch of good advice. But
 seems the source of the issue was missing a Support Placement during Slicing STL. So basically you
-can't
+can't print a base without printing a Support layers.
 I first used UltiMaker Cura for slicing. But following Reddit advice I found a pretty full config
-print a base without printing Support.
+
 from one of the Redditors who have significant experience in printing Dactul.
 Here the link to
 the [full config](https://www.reddit.com/r/ErgoMechKeyboards/comments/1afrvbi/comment/kocbimk/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button).
@@ -72,11 +72,11 @@ I complete the slice and start printing. You should be patient coz it will take 
 base
 plate.
 
-![printer.png](https://nolik.github.io//img/post_9/printer.png)
+![printer.png](https://nolik.github.io//img/post_9/printer.png =x620)
 
 #### 22 hours later...
 
-![printer_result.png](https://nolik.github.io//img/post_9/printer_result.png)
+![printer_result.png](https://nolik.github.io//img/post_9/printer_result.png =x620)
 
 Tiny life-hack: to detach the model from printer substrate => move it to refrigerator for 20
 minutes. Love physics, under low-temperature detail, will be detached themselves.
@@ -85,11 +85,11 @@ And about Support Placement: be ready to spend time to remove it. Based on the c
 lot
 of support layers.
 
-![back.png](https://nolik.github.io//img/post_9/back.png)
+![back.png](https://nolik.github.io//img/post_9/back.png =x620)
 
 #### Printing result
 
-![printing_reuslt.png](https://nolik.github.io//img/post_9/printing_reuslt.png)
+![printing_reuslt.png](https://nolik.github.io//img/post_9/printing_reuslt.png =x620)
 
 ## Wiring
 
