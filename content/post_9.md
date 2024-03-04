@@ -57,7 +57,7 @@ able to find bottom plates as well.
 
 And coz I'm complete newbie in 3D printing first time sure first try was not so successful.
 
-![first_try.png](https://nolik.github.io//img/post_9/first_try.png =x620)
+<img src="https://nolik.github.io//img/post_9/first_try.png" alt="drawing" width="620"/>
 
 I came up with a question about what's wrong on Reddit and there was a bunch of good advice. But
 seems the source of the issue was missing a Support Placement during Slicing STL. So basically you
@@ -72,11 +72,11 @@ I complete the slice and start printing. You should be patient coz it will take 
 base
 plate.
 
-![printer.png](https://nolik.github.io//img/post_9/printer.png =x620)
+<img src="https://nolik.github.io//img/post_9/printer.png" alt="drawing" width="620"/>
 
 #### 22 hours later...
 
-![printer_result.png](https://nolik.github.io//img/post_9/printer_result.png =x620)
+<img src="https://nolik.github.io//img/post_9/printer_result.png" alt="drawing" width="620"/>
 
 Tiny life-hack: to detach the model from printer substrate => move it to refrigerator for 20
 minutes. Love physics, under low-temperature detail, will be detached themselves.
@@ -85,11 +85,11 @@ And about Support Placement: be ready to spend time to remove it. Based on the c
 lot
 of support layers.
 
-![back.png](https://nolik.github.io//img/post_9/back.png =x620)
+<img src="https://nolik.github.io//img/post_9/back.png" alt="drawing" width="620"/>
 
 #### Printing result
 
-![printing_reuslt.png](https://nolik.github.io//img/post_9/printing_reuslt.png =x620)
+<img src="https://nolik.github.io//img/post_9/printing_reuslt.png" alt="drawing" width="620"/>
 
 ## Wiring
 
